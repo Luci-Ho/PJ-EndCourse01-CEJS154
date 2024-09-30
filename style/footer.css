@@ -1,36 +1,25 @@
 .footer {
-    /* display: flex;
-    width: 100%;
+    /* display: flex;  */
+    /* width: 100%;
     color: white;
     border: none;
-    /* box-sizing: border-box; */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    /* Chiều cao của footer */
-    background: url('image/footer/background/backgroundfooter_cut.svg') no-repeat center center;
-    /* background-size: cover; */
-    color: white;
-    /* padding: 10px 0; */
-    text-align: center;
-    z-index: 1000;
-    /* Đảm bảo footer nằm trên cùng */
+    box-sizing: border-box; */ 
+    /* position: fixed; */
+    bottom:0;
+    left:0;
+    width: calc(100%-200px);
 }
 
 .background-footer {
-    /* position: absolute; */
-    width: 1174px;
+    display: block;
+    width: 100%;
 }
-
 
 .footer-content {
     position: absolute;
     background-color: #412C3A;
-    margin-top: 15%;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    /* padding-bottom: 27px; */
+
+    padding-bottom: 27px;
 
 }
 
@@ -38,9 +27,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: white;
-    padding-bottom: 47.5px;
-    padding-top: 0px;
-    padding-right: 15px;
     justify-items: center;
     align-items: center;
 }
@@ -48,8 +34,7 @@
 .footer-content-details h1 {
     font-size: 40px;
     font-weight: 700;
-    padding-top: 30px;
-    padding-bottom: 15px;
+
 }
 
 .footer-content-details p {
@@ -67,6 +52,12 @@
 .footer-content-details span {
     color: #EE10B0;
     font-weight: 700;
+}
+
+.left-footer-content a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #0E9EEF;
 }
 
 .table {

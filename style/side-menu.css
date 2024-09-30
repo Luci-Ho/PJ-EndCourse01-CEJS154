@@ -11,6 +11,10 @@
 .dashboard {
     flex-grow: 1;
     background: linear-gradient(to right, #0E1920, #0E1920 70%);
+    position: fixed;
+    height: 100vh;
+    padding: 20px;
+
 }
 
 .DashBoard-menu {
