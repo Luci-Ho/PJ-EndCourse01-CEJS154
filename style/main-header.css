@@ -1,0 +1,65 @@
+
+.Main-Header {
+    margin-top: 62px;
+    display: flex;
+}
+
+.Header-Search {
+    display: flex;
+    flex-grow: 1.5;
+    margin-left: 20px;
+    position: relative;
+}
+
+.Header-Search input {
+    width: 359px;
+    height: 38px;
+    padding-left: 35px;
+    border: none;
+    background-color: #656565;
+    border-radius: 10px;
+}
+
+.Header-Search input::placeholder {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Header-Search img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+/* ------------------Phần Header-Menu------------------------- */
+.Header-Menu {
+    display: flex;
+    flex-grow: 4.5;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+.Header-Menu p a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.Header-Login {
+    display: flex;
+    flex-grow: 4;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Header-Login button {
+    border-radius: 10px;
+    width: 119px;
+    height: 38px;
+    font-size: 20px;
+    font-weight: 600;
+}

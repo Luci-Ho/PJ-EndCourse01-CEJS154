@@ -1,225 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script defer src="./index.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/album.css" />
+    <link rel="stylesheet" href="./style/body.css" />
+    <link rel="stylesheet" href="./style/side-menu.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css" />
+    <script defer src="./index-album.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+
 <body class="body">
-    <section class="album"> 
-        <div class="dashboard">
-        <!-- side bar -->
-         
+    <aside class="dashboard">
+        <div class="T1">
+            <p> Melodies </p>
         </div>
+        <!-- DashBoard-Menu -->
+        <div class="DashBoard-menu">
+            <p class="Menu">Menu</p>
+            <div class="Menu-part">
+                <div class="dashboard-menu-item-hover"> <i class="fa-solid fa-house"></i>
+                    <p>Home </p>
+                </div>
+                <div class="dashboard-menu-item-hover "> <i class="fa-regular fa-compass"></i>
+                    <p>Discover </p>
+                </div>
+                <div class="dashboard-menu-item-hover"> <i class="fa-regular fa-circle-dot"></i>
+                    <p>Albums </p>
+                </div>
+                <div class="dashboard-menu-item-hover"> <i class="bi bi-person-circle"></i>
+                    <p>Artists </p>
+                </div>
+            </div>
+        </div>
+        <!-- Dashboard-Library -->
+        <div class="DashBoard-Library">
+            <p class="Library"> Library</p>
+            <div class="Library-part">
+                <div class="dashboard-menu-item-hover"> <i class="fa-regular fa-clock"></i>
+                    <p> Recently Added </p>
+                </div>
+                <div class="dashboard-menu-item-hover"> <i class="fa-regular fa-compass"></i>
+                    <p> Most Played </p>
+                </div>
+            </div>
+        </div>
+        <!-- Dashboard-Playlist-and-Favorite -->
+        <div class="DashBoard-Playlist">
+            <p class="Play-list"> Playlist and Favorite </p>
+            <div class="Play-list-part">
+                <div class="dashboard-menu-item-hover"> <i class="fa-regular fa-heart"></i>
+                    <p> Your Favorites </p>
+                </div>
+                <div class="dashboard-menu-item-hover"> <i class="bi bi-music-note-list"></i>
+                    <p> Your Playlist </p>
+                </div>
+                <div class="dashboard-menu-item-hover"> <img src="./image/image-dashboard/Add.png" alt="">
+                    <p class="Add-playlist"> Add Playlist </p>
+                </div>
+            </div>
+        </div>
+        <!-- Dashboard-general -->
+        <div class="DashBoard-general">
+            <p class="General"> General </p>
+            <div class="General-part">
+                <div class="dashboard-menu-item-hover"> <i class="bi bi-gear"></i>
+                    <p> Setting </p>
+                </div>
+                <div class="dashboard-menu-item-hover"> <i class="bi bi-box-arrow-right Logout"></i>
+                    <p class="Logout"> Log Out </p>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- Phần main -->
+    <main class="main">
         <div class="album-detail">
+            <div class="album-header">
                 <div class="menu-album">
-                        <img src="./image/icon/material-symbols_arrow-back.svg">
-                        
-                        <div class="group-menu">
-                            <p>Share</p>
-                            <P>About</P>
-                            <P>Premuim</P>
-                            <P>Premu</P>
-                            <img src="./image/icon/iconamoon_profile-circle-fill.svg">
-                        </div>
+                    <div>
+                        <img src="./image/album/icon/material-symbols_arrow-back.svg">
+                    </div>
+                    <div class="group-menu">
+                        <p>Share</p>
+                        <P>About</P>
+                        <P>Premuim</P>
+                        <img src="./image/album/icon/iconamoon_profile-circle-fill.svg">
+                    </div>
                 </div>
 
                 <div class="trendingmusic">
-                        
-                        <img src="./image/album image/844adf7d6f536a6e2d4f61847c7148ce.png" width="268px">
-                        
-                        <div>
-                            <h2>Trending songs <span>mix</span></h2>
-                            <p>tate mcree, nightmares, the neighberhood, doja cat and ...</p>
-                            <p> 20 songs <span> . </span> 1h36m </p>
-                        </div>
-
-                        <div class="playAll">
-                            <p>Play All</p>
-                            <img class="play-img" src="./image/icon/octicon_play-16.svg">
-                        </div>
-                </div>
-
-                <div class="billBoardTop20">
-                    <p> BXH Top 20 </p>
-                </div>
-
-                <div class="footer">
-                    <style>
-                        .footer img{
-                                display: block;
-                                width: 100%;
-                                }
-
-                        .footer {
-                                display: flex;
-                                width: 100%;
-                                /* background-color: transparent; */
-                                color: white;
-                                border: none;
-                                box-sizing: border-box;
-                                }
-
-                        .footer-content{
-                                position: absolute;
-                                background-color: #412C3A;
-                                margin-top: 15%;
-                                padding-left: 0px;
-                                padding-bottom: 0px;
-                                /* padding-bottom: 27px; */
-                                width: 100%;
-                                }
-                                
-                        .footer-content-details{
-                        display: grid;
-                        grid-template-columns: 2fr 1fr 1fr;
-                        color: white;
-                        padding-bottom: 47.5px;
-                        padding-top: 0px;
-                        padding-right: 15px;
-                        justify-items: center; 
-                        align-items: center;
-                        }
-                    </style>
-
-                    <img src="./image/background/backgroundfooter_cut.svg">
-                    <div class="footer-content">
-                        <div class="footer-content-details">
-                            <div>
-                                <style>
-                                    h1{ 
-                                        font-size: 40px;
-                                        font-weight: 700;
-                                        padding-top: 30px;
-                                        padding-bottom: 15px;
-                                    }
-
-                                    p{
-                                        font-size: 20px;
-                                        font-weight: 600;
-                                        word-wrap: break-word;
-                                        padding-right: 30px;
-                                        text-align: justify;
-                                        width: 100%; /* Điều chỉnh độ rộng của đoạn văn bản */
-                                        margin: 0 auto; /* Căn giữa đoạn văn bản trong trang */
-                                    }
-                                    
-                                    span{
-                                        color:#EE10B0;
-                                        font-weight: 700;
-                                    }
-
-                                </style>
-
-                                <h1>About</h1>
-                                <p>Melodies is a website that has been created for over <span>5 year’s</span> now and it is one of the most famous music player website’s in the world. in this website you can listen and download songs for free. also of you want no limitation you can buy our <a style="text-decoration:none; font-weight: 700; color:#0E9EEF;" href="#">premium pass’s.</a></p>
-                            </div>
-
-                            <div>  <!-- table in footer -->
-                                <table>  
-                                <style>
-                                        table {
-                                            border-collapse: separate; /* Đảm bảo các ô không bị gộp lại */
-                                            border-spacing: 10px; /* Khoảng cách giữa các ô theo chiều dọc */
-                                            width: 100%;
-                                            /* padding: 0px 25px 0px 25px; */
-                                            }
-
-                                        th {
-                                            border-bottom: 3px solid hsl(0, 0%, 100%);
-                                            text-align: center;
-                                            padding: 10px;
-                                            font-size:36px;
-                                            }
-
-                                        td{
-                                            font-size: 24px;
-                                            font-weight: 500;
-                                            word-wrap: break-word;
-                                            text-align: center;
-                                            color:#dddddd;
-                                            }
-
-                                        a{
-                                            color:#dddddd;
-                                            }
-                            </style>
-                            <tr >
-                                <th>Melodi</th>
-                                <th>Acess </th>
-                                <th>Contact</th>
-                            </tr>
-                            <tr>
-                                <td><a style="text-decoration:none" href="#">Songs</a></td>
-                                <td><a style="text-decoration:none" href="#">Explore</a></td>
-                                <td><a style="text-decoration:none" href="#">About</a></td>
-                            </tr>
-                            <tr>
-                                <td><a style="text-decoration:none" href="#">Radio</a></td>
-                                <td><a style="text-decoration:none" href="#">Artists</a></td>
-                                <td><a style="text-decoration:none" href="#">Policiy</a></td>
-                            </tr>
-                            <tr>
-                                <td><a style="text-decoration:none" href="#">Podcast</a></td>
-                                <td><a style="text-decoration:none" href="#">Playlists</a></td>
-                                <td><a style="text-decoration:none" href="#">Social Media</a></td>
-                            </tr>
-                            <tr> 
-                                <td><a style="text-decoration:none" href="#"></a></td>
-                                <td><a style="text-decoration:none" href="#">Albums</a></td>
-                                <td><a style="text-decoration:none" href="#">Soppurt</a></td>
-                            </tr>
-                            <tr> 
-                                <td><a style="text-decoration:none" href="#"></a></td>
-                                <td><a style="text-decoration:none" href="#">Trendings</a></td>
-                                <td><a style="text-decoration:none" href="#"></a></td>
-                            </tr>
-                         </table>
+                    <div class="banner-trending-music">
+                        <img src="./image/album/album image/844adf7d6f536a6e2d4f61847c7148ce.png" width="268px">
                     </div>
-                    <div class="contact">
-                        <style>
-                            .contact{
-                                box-sizing: border-box;
-                                place-items: center;
-                                text-align: center;
-                                padding: 0;
-                            }
-                            
-                            .Logo {               
-                                padding: 0px 40px 10px 40px;
-                                position: center;             
-                                font-size: 43px;
-                                font-weight: 700;
-                                background: linear-gradient(to right, #EE10B0, #0E9EEF); /* Màu gradient từ trái sang phải */
-                                        background-clip: text;
-                                        -webkit-text-fill-color: transparent;                                
-                                }
+                    <div>
+                        <h2>Trending songs <span>mix</span></h2>
+                        <p class="trending-music-content">tate mcree, nightmares, the neighberhood, doja cat and ...</p>
 
-                            .link{
-                                display: flex;
-                                gap: 20px;
-                                padding: 149px 40px 30px 10px;
-                            }
-
-                        </style>
-                        <p class="Logo">Melodies</p>
-                        <div class="link">
-                            <img src="./image/icon/fb.svg">
-                            <img src="./image/icon/ig.svg">
-                            <img src="./image/icon/tw.svg">
-                            <img src="./image/icon/call.svg">
+                        <div class="Playlist-trending-songs">
+                            <p>20 songs<span>.</span>1h36m </p>
                         </div>
                     </div>
-                </div>
-                
+                    <div>
+                        <button class="play-button"> Play All
+                            <img class="play-icon" src="./image/album/icon/octicon_play-16.svg">
+                        </button>
                     </div>
                 </div>
+            </div>
+
+            <div class="billBoardTop20">
+                <table i="numberTable" class="table-bill-board">
+                    <tr>
+                        <!-- insert 8 columns -->
+                        <th style="width: 2%;"></th>
+                        <th style="width: 4%;"></th>
+                        <th style="width: 15%;"></th>
+                        <th style="width: 10%;">Relase Date</th>
+                        <th style="width: 30%;">Album</th>
+                        <th style="width: 2%;"></th>
+                        <th style="width: 3%;">time</th>
+                        <th style="width: 2%;"></th>
+                    </tr>
+
+                    <tr>
+                        <td class="left-align"> <img src="./image/album/icon/arcticons_vk-music.svg"> </td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 1.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Sorfcore <br> <span>The neighberhood</span></td>
+                        <td class="highlight main-font-size">Nov 4, 2023</td>
+                        <td class="highlight main-font-size">Hard to Imagine Neighbourhood Ever Changing</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">3:26</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 2.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Skyfall Beats <br> <span>nightmares</span></td>
+                        <td class="highlight main-font-size">Oct 26, 2023</td>
+                        <td class="highlight main-font-size">nightmares</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:45</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align ordinal-number"></td>
+                        <td class="highlight left-align border-left"> <img
+                                src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
+                        <td class="highlight left-align Name-of-song"> Greedy <br> <span>tate mcrae</span></td>
+                        <td class="highlight main-font-size">Nov 30, 2023</td>
+                        <td class="highlight main-font-size">Greedy</td>
+                        <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                        <td class="highlight main-font-size">2:11</td>
+                        <td class="highlight border-right main-font-size">...</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </section>
-    
+        <!-- Footer -->
+        
+    </main>
+    <div class="footer">
+        <img class="background-footer" src="./image/footer/background/backgroundfooter_cut.svg">
+        <div class="footer-content">
+            <div class="footer-content-details">
+                <div>
+
+                    <h1>About</h1>
+                    <p>Melodies is a website that has been created for over <span>5 year’s</span> now and it is
+                        one of the most famous music player website’s in the world. in this website you can
+                        listen and download songs for free. also of you want no limitation you can buy our <a
+                            style="text-decoration:none; font-weight: 700; color:#0E9EEF;" href="#">premium
+                            pass’s.</a></p>
+                </div>
+
+                <div> <!-- table in footer -->
+                    <table class="table">
+                        <tr>
+                            <th>Melodi</th>
+                            <th>Acess </th>
+                            <th>Contact</th>
+                        </tr>
+                        <tr>
+                            <td><a style="text-decoration:none" href="#">Songs</a></td>
+                            <td><a style="text-decoration:none" href="#">Explore</a></td>
+                            <td><a style="text-decoration:none" href="#">About</a></td>
+                        </tr>
+                        <tr>
+                            <td><a style="text-decoration:none" href="#">Radio</a></td>
+                            <td><a style="text-decoration:none" href="#">Artists</a></td>
+                            <td><a style="text-decoration:none" href="#">Policiy</a></td>
+                        </tr>
+                        <tr>
+                            <td><a style="text-decoration:none" href="#">Podcast</a></td>
+                            <td><a style="text-decoration:none" href="#">Playlists</a></td>
+                            <td><a style="text-decoration:none" href="#">Social Media</a></td>
+                        </tr>
+                        <tr>
+                            <td><a style="text-decoration:none" href="#"></a></td>
+                            <td><a style="text-decoration:none" href="#">Albums</a></td>
+                            <td><a style="text-decoration:none" href="#">Soppurt</a></td>
+                        </tr>
+                        <tr>
+                            <td><a style="text-decoration:none" href="#"></a></td>
+                            <td><a style="text-decoration:none" href="#">Trendings</a></td>
+                            <td><a style="text-decoration:none" href="#"></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contact">
+
+                    <p class="Logo">Melodies</p>
+                    <div class="link">
+                        <img src="./image/footer/background/fb.svg">
+                        <img src="./image/footer/background/ig.svg">
+                        <img src="./image/footer/background/tw.svg">
+                        <img src="./image/footer/background/call.svg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
+
 </html>

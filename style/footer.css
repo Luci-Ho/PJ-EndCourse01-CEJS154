@@ -1,0 +1,122 @@
+.footer {
+    /* display: flex;
+    width: 100%;
+    color: white;
+    border: none;
+    /* box-sizing: border-box; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* Chiều cao của footer */
+    background: url('image/footer/background/backgroundfooter_cut.svg') no-repeat center center;
+    /* background-size: cover; */
+    color: white;
+    /* padding: 10px 0; */
+    text-align: center;
+    z-index: 1000;
+    /* Đảm bảo footer nằm trên cùng */
+}
+
+.background-footer {
+    /* position: absolute; */
+    width: 1174px;
+}
+
+
+.footer-content {
+    position: absolute;
+    background-color: #412C3A;
+    margin-top: 15%;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    /* padding-bottom: 27px; */
+
+}
+
+.footer-content-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    padding-bottom: 47.5px;
+    padding-top: 0px;
+    padding-right: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-content-details h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.footer-content-details p {
+    font-size: 20px;
+    font-weight: 600;
+    word-wrap: break-word;
+    padding-right: 30px;
+    text-align: justify;
+    width: 100%;
+    /* Điều chỉnh độ rộng của đoạn văn bản */
+    margin: 0 auto;
+    /* Căn giữa đoạn văn bản trong trang */
+}
+
+.footer-content-details span {
+    color: #EE10B0;
+    font-weight: 700;
+}
+
+.table {
+    border-collapse: separate;
+    /* Đảm bảo các ô không bị gộp lại */
+    border-spacing: 10px;
+    /* Khoảng cách giữa các ô theo chiều dọc */
+    width: 100%;
+    /* padding: 0px 25px 0px 25px; */
+}
+
+.table th {
+    border-bottom: 3px solid hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+}
+
+.table td {
+    font-size: 24px;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-align: center;
+    color: #dddddd;
+}
+
+.table a {
+    color: #dddddd;
+}
+
+.contact {
+    box-sizing: border-box;
+    place-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.Logo {
+    padding: 0px 40px 10px 40px;
+    position: center;
+    font-size: 43px;
+    font-weight: 700;
+    background: linear-gradient(to right, #EE10B0, #0E9EEF);
+    /* Màu gradient từ trái sang phải */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link {
+    display: flex;
+    gap: 20px;
+    padding: 149px 40px 30px 10px;
+}

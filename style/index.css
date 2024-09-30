@@ -1,0 +1,87 @@
+
+
+/* ------------------- Phần dashboard Menu --------------------- */
+
+/* -------------------Hover--------------- */
+
+
+
+/* ------------------- Phần Main --------------------- */
+.main {
+    flex-grow: 9;
+    background-color: #412C3A;
+}
+
+.button-login {
+    border: none;
+    background-color: #1E1E1E;
+}
+
+.button-login a {
+    text-decoration: none;
+    color: #EE10B0;
+}
+
+.button-signup {
+    border: 1.12px solid #FFFFFF;
+    box-shadow: 0 0 8px 3px #ff00ff;
+    background-color:#FF26C2;
+}
+
+.button-signup a {
+    color: #1E1E1E;
+    text-decoration: none;
+   
+}
+
+.Banner {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+    position: relative;
+}
+
+.Previous,
+.Next {
+    display: flex;
+    border:none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+}
+
+.Picture {
+    position: relative;
+}
+
+.Paragraph {
+    position: absolute;
+}
+
+.Para {
+    max-width: 281.47px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Para-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.Para-content {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.Listen {
+    color: #ff00ff ;
+}

@@ -1,27 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3-Column Footer</title>
-    <style>
-        footer {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-        .column {
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
-    <footer>
-        <div class="column">Cột 1</div>
-        <div class="column">Cột 2</div>
-        <div class="column">Cột 3</div>
-    </footer>
-</body>
-</html>
+<style>
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        word-wrap: break-word;
+        padding-right: 30px;
+        text-align: justify;
+        width: 100%;
+        /* Điều chỉnh độ rộng của đoạn văn bản */
+        margin: 0 auto;
+        /* Căn giữa đoạn văn bản trong trang */
+    }
+
+    span {
+        color: #EE10B0;
+        font-weight: 700;
+    }
+</style>
+<style>
+    table {
+        border-collapse: separate;
+        /* Đảm bảo các ô không bị gộp lại */
+        border-spacing: 10px;
+        /* Khoảng cách giữa các ô theo chiều dọc */
+        width: 100%;
+        /* padding: 0px 25px 0px 25px; */
+    }
+
+    th {
+        border-bottom: 3px solid hsl(0, 0%, 100%);
+        text-align: center;
+        padding: 10px;
+        font-size: 36px;
+    }
+
+    td {
+        font-size: 24px;
+        font-weight: 500;
+        word-wrap: break-word;
+        text-align: center;
+        color: #dddddd;
+    }
+
+    a {
+        color: #dddddd;
+    }
+</style>
+<style>
+    .contact {
+        box-sizing: border-box;
+        place-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .Logo {
+        padding: 0px 40px 10px 40px;
+        position: center;
+        font-size: 43px;
+        font-weight: 700;
+        background: linear-gradient(to right, #EE10B0, #0E9EEF);
+        /* Màu gradient từ trái sang phải */
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .link {
+        display: flex;
+        gap: 20px;
+        padding: 149px 40px 30px 10px;
+    }
+</style>
+
+<style>
+    .footer img {
+        display: block;
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        width: 100%;
+        /* background-color: transparent; */
+        color: white;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    .footer-content {
+        position: absolute;
+        background-color: #412C3A;
+        margin-top: 15%;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        /* padding-bottom: 27px; */
+        width: 100%;
+    }
+
+    .footer-content-details {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        color: white;
+        padding-bottom: 47.5px;
+        padding-top: 0px;
+        padding-right: 15px;
+        justify-items: center;
+        align-items: center;
+    }
+</style>
