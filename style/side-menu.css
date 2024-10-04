@@ -13,7 +13,7 @@
     background: linear-gradient(to right, #0E1920, #0E1920 70%);
     position: fixed;
     height: 100vh;
-    padding: 20px;
+    padding: 20px 20px 20px 0px ;
 
 }
 
@@ -51,6 +51,7 @@
 .General-part div i {
     width: 18.75px;
     height: 18.75px;
+    padding-top: 1.5px;
 }
 .Menu-part div p,
 .Library-part div p,
@@ -60,6 +61,7 @@
     font-weight: 600;
     color: #FFFFFF;
     margin: 0;
+    padding-top: 5px;
 }
 /* ------------------- Phần DashBoard-Lirary --------------------- */
 .DashBoard-Library {
@@ -88,6 +90,7 @@
 }
 
 .dashboard-menu-item-hover {
+    
     width: 230px;
     height: 42px;
     display: inline-block;

@@ -9,12 +9,8 @@
     width: 100%;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    background-color: #412C3A;
 }
 
-.main {
-    display:flex;
-    flex-grow: 9;
-    background-color: #412C3A;
-    margin-left: 260px;
-    z-index: 1;
-}
+

@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 9;
+    margin: 26px 20px 0px 340px;
+    z-index: 1000;
+    opacity: 0.90; 
+    background: linear-gradient(90deg, #0C0B0B 0%, rgba(0, 0, 0, 0.02) 100%); 
+    border-radius: 10px
+}

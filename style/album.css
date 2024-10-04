@@ -1,15 +1,19 @@
-.album-detail {
-    min-height: 100vh;
-    width: 1076px;
-    padding-bottom: 5%;
+.main {
     display: flex;
     flex-direction: column;
-    margin-top: 26px;
-    margin-left: 62px;
-    margin-bottom: 0px;
-    background: linear-gradient(90deg, #005ac0af 0%, rgba(38, 136, 247, 0.808) 40%, rgba(17, 114, 226, 0.144) 100%);
+    flex-grow: 9;
+    margin: 26px 20px 0px 340px;
+    z-index: 1000;
+    opacity: 0.90; 
+    background: linear-gradient(90deg, #005ac0af 0%, #0a53a789 40%, rgba(17, 114, 226, 0.144) 100%);
     border-radius: 10px;
-    position: relative;
+}
+
+.album-detail {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
 }
 
 .album-header {
@@ -95,7 +99,6 @@
     display: flex;
     align-items: center;
     margin-top: 44px;
-
 }
 
 .Playlist-trending-songs p {
