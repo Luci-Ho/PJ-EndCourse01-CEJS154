@@ -52,6 +52,9 @@
     font-weight: 700;
     color: #0E9EEF;
 }
+.left-footer-content a:hover {
+    color:inherit;
+}
 
 .table_content {
     border-collapse: separate;
@@ -80,6 +83,11 @@
 
 .table_content a {
     color: hsl(0, 0%, 100%);
+    text-decoration:none;
+}
+
+.table_content a:hover {
+    color:inherit;
 }
 
 .contact {
@@ -103,4 +111,12 @@
     display: flex;
     gap: 20px;
     padding: 130px 10px 50px 10px;
+}
+
+@media screen and (max-width: 430px){
+    .footer,
+    .footer-content {
+        display: none;
+    }
+    
 }

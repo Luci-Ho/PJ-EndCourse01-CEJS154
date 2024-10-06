@@ -1,0 +1,25 @@
+.header-mobile {
+    display: none;
+}
+
+@media screen and (max-width : 430px) {
+    .menu {
+        display: none;
+    }
+
+    .header-mobile {
+        display: flex;
+        margin: 15px;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .artist-header{
+
+    }
+
+    .more-icon-header{
+        
+    }
+
+}

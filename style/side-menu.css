@@ -45,6 +45,7 @@
     margin: 0px;
 }
 
+
 .Menu-part div i,
 .Library-part div i,
 .Play-list-part div i,
@@ -62,6 +63,21 @@
     color: #FFFFFF;
     margin: 0;
     padding-top: 5px;
+}
+
+.Menu-part a,
+.Library-part a,
+.Play-list-part a,
+.General-part a {
+    color: hsl(0, 0%, 100%);
+    text-decoration:none;
+}
+
+.Menu-part a:hover,
+.Library-part a:hover,
+.Play-list-part a:hover,
+.General-part a:hover {
+    color:inherit;
 }
 /* ------------------- Phần DashBoard-Lirary --------------------- */
 .DashBoard-Library {
@@ -118,4 +134,14 @@
 
 .Logout:hover {
     color:  #FFFFFF !important;
+}
+
+@media screen and (max-width: 430px){
+    .dashboard{
+        display:none;
+    }
+
+    .T1{
+        display: none;
+    }
 }

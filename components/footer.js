@@ -24,29 +24,29 @@ footerElement.innerHTML = `
                                 <th>Contact</th>
                             </tr>
                             <tr>
-                                <td><a style="text-decoration:none" href="#">Songs</a></td>
-                                <td><a style="text-decoration:none" href="#">Explore</a></td>
-                                <td><a style="text-decoration:none" href="#">About</a></td>
+                                <td><a href="#">Songs</a></td>
+                                <td><a href="#">Explore</a></td>
+                                <td><a href="#">About</a></td>
                             </tr>
                             <tr>
-                                <td><a style="text-decoration:none" href="#">Radio</a></td>
-                                <td><a style="text-decoration:none" href="#">Artists</a></td>
-                                <td><a style="text-decoration:none" href="#">Policiy</a></td>
+                                <td><a href="#">Radio</a></td>
+                                <td><a href="#">Artists</a></td>
+                                <td><a href="#">Policiy</a></td>
                             </tr>
                             <tr>
-                                <td><a style="text-decoration:none" href="#">Podcast</a></td>
-                                <td><a style="text-decoration:none" href="#">Playlists</a></td>
-                                <td><a style="text-decoration:none" href="#">Social Media</a></td>
+                                <td><a href="#">Podcast</a></td>
+                                <td><a href="#">Playlists</a></td>
+                                <td><a href="#">Social Media</a></td>
                             </tr>
                             <tr>
-                                <td><a style="text-decoration:none" href="#"></a></td>
-                                <td><a style="text-decoration:none" href="#">Albums</a></td>
-                                <td><a style="text-decoration:none" href="#">Soppurt</a></td>
+                                <td><a href="#"></a></td>
+                                <td><a href="#">Albums</a></td>
+                                <td><a href="#">Soppurt</a></td>
                             </tr>
                             <tr>
-                                <td><a style="text-decoration:none" href="#"></a></td>
-                                <td><a style="text-decoration:none" href="#">Trendings</a></td>
-                                <td><a style="text-decoration:none" href="#"></a></td>
+                                <td><a href="#"></a></td>
+                                <td><a href="#">Trendings</a></td>
+                                <td><a href="#"></a></td>
                             </tr>
                         </table>
                     </div>
