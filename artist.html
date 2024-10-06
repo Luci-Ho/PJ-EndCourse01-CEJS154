@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./style/body.css" />
     <link rel="stylesheet" href="./style/side-menu.css" />
     <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/table.css">
+    <link rel="stylesheet" href="./style/grid-artist-part.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css" />
     <script defer src="./index-album.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -81,7 +83,330 @@
     </aside>
     <!-- Phần main -->
     <main class="main">
-        
+        <div class="artist-detail">
+            <!-- header -->
+            <div class="artist-header">
+                <img class="artist-header-image" src="./image/artist/artist-image/Rectangle 37.png">
+                <div class="menu">
+                    <img src="./image/album/icon/material-symbols_arrow-back.svg">
+                    <div>
+                        <div class="group-menu">
+                            <p>Share</p>
+                            <P>About</P>
+                            <P>Premuim</P>
+                            <img src="./image/album/icon/iconamoon_profile-circle-fill.svg">
+                        </div>
+                        <p class="artist-name">Eminem</p>
+                    </div>
+                </div>
+            </div>
+            <!-- popular -->
+            <div>
+                <p class="popular-title">Popuplar</p>
+                <div class="group-table">
+                    <table class="table-contents">
+                        <tr>
+                            <!-- insert 8 columns -->
+                            <th style="width: 2%;"></th>
+                            <th style="width: 4%;"></th>
+                            <th style="width: 15%;"></th>
+                            <th style="width: 10%;">Relase Date</th>
+                            <th style="width: 30%;">Play</th>
+                            <th style="width: 2%;"></th>
+                            <th style="width: 3%;">Time</th>
+                            <th style="width: 2%;"></th>
+                        </tr>
+                        <tr>
+                            <td class="left-align">1</td>
+                            <td class="highlight left-align border-left"> <img
+                                    src="./image/artist/artist-image/The_Neighbourhood_-_The_Neighbourhood 1.png"></td>
+                            <td class="highlight left-align Name-of-song"> Without Me <br> <span> Eminem </span></td>
+                            <td class="highlight main-font-size">May 15, 2002</td>
+                            <td class="highlight main-font-size">21,215,618</td>
+                            <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                            <td class="highlight main-font-size">4:50</td>
+                            <td class="highlight border-right main-font-size icon-details">...</td>
+                        </tr>
+                        <tr>
+                            <td class="left-align">2</td>
+                            <td class="highlight left-align border-left"> <img
+                                    src="./image/artist/artist-image//The_Neighbourhood_-_The_Neighbourhood 2.png"></td>
+                            <td class="highlight left-align Name-of-song"> mockingbird <br> <span> Eminem </span></td>
+                            <td class="highlight main-font-size">Apr 25, 2005</td>
+                            <td class="highlight main-font-size">19,856,112</td>
+                            <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                            <td class="highlight main-font-size">4:10</td>
+                            <td class="highlight border-right main-font-size icon-details">...</td>
+                        </tr>
+                        <tr>
+                            <td class="left-align">3</td>
+                            <td class="highlight left-align border-left"> <img
+                                    src="./image/artist/artist-image/The_Neighbourhood_-_The_Neighbourhood 3.png"></td>
+                            <td class="highlight left-align Name-of-song"> The Real Slim Sha.. <br> <span> Eminem
+                                </span></td>
+                            <td class="highlight main-font-size">Nov 30, 2023</td>
+                            <td class="highlight main-font-size"> 16,564,223 </td>
+                            <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                            <td class="highlight main-font-size">4:44</td>
+                            <td class="highlight border-right main-font-size icon-details">...</td>
+                        </tr>
+                        <tr>
+                            <td class="left-align">4</td>
+                            <td class="highlight left-align border-left"> <img
+                                    src="./image/artist/artist-image/The_Neighbourhood_-_The_Neighbourhood 4.png"></td>
+                            <td class="highlight left-align Name-of-song"> Lose Yourself <br> <span> Eminem </span></td>
+                            <td class="highlight main-font-size"> Nov 30, 2023 </td>
+                            <td class="highlight main-font-size"> 16,240,390 </td>
+                            <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                            <td class="highlight main-font-size">5:22</td>
+                            <td class="highlight border-right main-font-size icon-details">...</td>
+                        </tr>
+                        <tr>
+                            <td class="left-align">5</td>
+                            <td class="highlight left-align border-left"> <img
+                                    src="./image/artist/artist-image/The_Neighbourhood_-_The_Neighbourhood 5.png"></td>
+                            <td class="highlight left-align Name-of-song"> Godzila <br> <span> Eminem </span></td>
+                            <td class="highlight main-font-size"> Nov 30, 2023 </td>
+                            <td class="highlight main-font-size"> 14,367,500 </td>
+                            <td class="highlight left-align"> <img src="./image/album/icon/ph_heart-light.svg"> </td>
+                            <td class="highlight main-font-size">3:30</td>
+                            <td class="highlight border-right main-font-size icon-details">...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="button-container">
+                    <button class="button-in-popular-group">Show All</button>
+                </div>
+            </div>
+            <!-- Artist's album -->
+            <div>
+                <p class="artist-album-title">Artist's <span> Albums </span> </p>
+                <div class="grid-square">
+                    <div class="grid-square-details">
+                        <img src="./image/artist/artist-image/artist's-Albums 1.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid">The Eminem Show</p>
+                            <div class="inside-info-grid">
+                                <p class="left">2002</p>
+                                <img class="right" src="./image/artist/icon/material-symbols-light_album-outline.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img src="./image/artist/artist-image/artist's-Albums 2.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Encore </p>
+                            <div class="inside-info-grid">
+                                <p class="left">2004</p>
+                                <img class="right" src="./image/artist/icon/material-symbols-light_album-outline.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img src="./image/artist/artist-image/artist's-Albums 3.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Music To be Mrder... </p>
+                            <div class="inside-info-grid">
+                                <p class="left">2020</p>
+                                <img class="right" src="./image/artist/icon/material-symbols-light_album-outline.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img src="./image/artist/artist-image/artist's-Albums 4.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Recovery </p>
+                            <div class="inside-info-grid">
+                                <p class="left">2010</p>
+                                <img class="right" src="./image/artist/icon/material-symbols-light_album-outline.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img src="./image/artist/artist-image/artist's-Albums 5.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Eminem The Slim ... </p>
+                            <div class="inside-info-grid">
+                                <p class="left"> 1999 </p>
+                                <img class="right" src="./image/artist/icon/material-symbols-light_album-outline.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plus-in-grid">
+                        <p>+</p>
+                        <p> View All</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Single songs -->
+            <div>
+                <p class="single-song-title">Single <span>Songs</span></p>
+                <div class="grid-square">
+                    <div class="grid-square-details">
+                        <img class="scale-border-image" src="./image/artist/artist-image/single song 1.jpg">
+                        <div class="info-grid">
+                            <p class="title-info-grid">Lace It </p>
+                            <div class="inside-info-grid">
+                                <p class="left">2003</p>
+                                <img class="right" src="./image/artist/icon/music notes.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img class="scale-border-image" src="./image/artist/artist-image/single song 2.jpg">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Releast</p>
+                            <div class="inside-info-grid">
+                                <p class="left">2022</p>
+                                <img class="right" src="./image/artist/icon/music notes.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img class="scale-border-image" src="./image/artist/artist-image/single song 3">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> From the D 2 the LBC</p>
+                            <div class="inside-info-grid">
+                                <p class="left">2023</p>
+                                <img class="right" src="./image/artist/icon/music notes.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img class="scale-border-image" src="./image/artist/artist-image/single song 4.jpg">
+                        <div class="info-grid">
+                            <p class="title-info-grid">911</p>
+                            <div class="inside-info-grid">
+                                <p class="left">2022</p>
+                                <img class="right" src="./image/artist/icon/music notes.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img class="scale-border-image" src="./image/artist/artist-image/single song 5.jpg">
+                        <div class="info-grid">
+                            <p class="title-info-grid">Killshot</p>
+                            <div class="inside-info-grid">
+                                <p class="left">2018</p>
+                                <img class="right" src="./image/artist/icon/music notes.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plus-in-grid">
+                        <p>+</p>
+                        <p> View All</p>
+                    </div>
+                </div>
+            </div>
+            <!-- artist's Playlist -->
+            <div>
+                <p class="single-song-title"> Artist's <span> Playlist </span></p>
+                <div class="grid-square">
+                    <div class="grid-square-details">
+                        <img class="artist-image" src="./image/artist/artist-image/artist-playlist 1.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid">Lace It </p>
+                            <div class="inside-info-grid-artist-palylist">
+                                <p class="left"></p>
+                                <img class="right" src="./image/artist/icon/ph_playlist.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img class="artist-image" src="./image/artist/artist-image/artist-playlist 2.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Best Of Eminem </p>
+                            <div class="inside-info-grid-artist-palylist">
+                                <p class="left"></p>
+                                <img class="right" src="./image/artist/icon/ph_playlist.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img class="artist-image" src="./image/artist/artist-image/artist-playlist 3.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Old Songs </p>
+                            <div class="inside-info-grid-artist-palylist">
+                                <p class="left"></p>
+                                <img class="right" src="./image/artist/icon/ph_playlist.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img class="artist-image" src="./image/artist/artist-image/artist-playlist 4.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Fan's Favorite </p>
+                            <div class="inside-info-grid-artist-palylist">
+                                <p class="left"></p>
+                                <img class="right" src="./image/artist/icon/ph_playlist.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-square-details">
+                        <img class="artist-image" src="./image/artist/artist-image/artist-playlist 5.png">
+                        <div class="info-grid">
+                            <p class="title-info-grid"> New Release So... </p>
+                            <div class="inside-info-grid-artist-palylist">
+                                <p class="left"></p>
+                                <img class="right" src="./image/artist/icon/ph_playlist.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plus-in-grid">
+                        <p>+</p>
+                        <p> View All</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Eminem Fans Also Listen To -->
+            <div>
+                <p class="single-song-title"> Eminem Fans <span> Also Listen To </span></p>
+                <div class="circle-grid">
+                    <div class="circle-grid-details">
+                        <div class="artist-circle-image">
+                            <img src="./image/artist/artist-image/1.jpg">
+                        </div>
+                        <div class="info-grid">
+                            <p class="title-info-grid"> 50 Cent </p>
+                        </div>
+                    </div>
+                    <div class="circle-grid-details">
+                        <div class="artist-circle-image">
+                            <img src="./image/artist/artist-image/2.jpg">
+                        </div>
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Snoop Dog </p>
+                        </div>
+                    </div>
+                    <div class="circle-grid-details">
+                        <div class="artist-circle-image">
+                            <img src="./image/artist/artist-image/3.jpg">
+                        </div>
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Tupac </p>
+                        </div>
+                    </div>
+                    <div class="circle-grid-details">
+                        <div class="artist-circle-image">
+                            <img src="./image/artist/artist-image/4.jpg">
+                        </div>
+                        <div class="info-grid">
+                            <p class="title-info-grid"> Jay-z </p>
+                        </div>
+                    </div>
+
+                    <div class="plus-in-grid">
+                        <p>+</p>
+                        <p> View All</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+        </div>
         <!-- Footer -->
         <div class="footer">
             <div class="footer-content">
@@ -91,7 +416,8 @@
                         <h1>About</h1>
                         <p>Melodies is a website that has been created for over <span>5 year’s</span> now and it is
                             one of the most famous music player website’s in the world. in this website you can
-                            listen and download songs for free. also of you want no limitation you can buy our <a href="#">premium
+                            listen and download songs for free. also of you want no limitation you can buy our <a
+                                href="#">premium
                                 pass’s.</a></p>
                     </div>
                     <!-- center-footer -->
@@ -130,7 +456,7 @@
                         </table>
                     </div>
                     <!-- right-footer -->
-                    <div class="contact"> 
+                    <div class="contact">
                         <p class="Logo">Melodies</p>
                         <div class="link">
                             <img src="./image/footer/background/fb.svg">
@@ -143,7 +469,7 @@
             </div>
         </div>
     </main>
-   
-    </body>
+
+</body>
 
 </html>

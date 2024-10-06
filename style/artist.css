@@ -3,8 +3,188 @@
     flex-direction: column;
     flex-grow: 9;
     margin: 26px 20px 0px 340px;
-    z-index: 1000;
-    opacity: 0.90; 
-    background: linear-gradient(90deg, #0C0B0B 0%, rgba(0, 0, 0, 0.02) 100%); 
+    z-index: 1;
+    opacity: 0.90;
+    background: linear-gradient(90deg, #0C0B0B 0%, rgba(0, 0, 0, 0.096) 100%);
     border-radius: 10px
+}
+
+.artist-detail {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.artist-header {
+
+    border-radius: 10px;
+    height: 456px;
+    box-shadow: 1px 9px 6px 1px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: 1px 9px 6px 1px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 1px 9px 6px 1px rgba(0, 0, 0, 0.36);
+}
+
+.artist-header-image {
+    position: absolute;
+    clip-path: inset(0.01% 0.01% 57% 0.01%);
+    width: 74.7%;
+    border-radius: 10px;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 10px 0px 10px 10px;
+}
+
+.group-menu {
+    position: absolute;
+    display: flex;
+    top: 1%;
+    gap: 20px;
+    padding-left: 600px;
+}
+
+.group-menu img {
+    padding-left: 40px;
+}
+
+.group-menu p {
+    margin: 0px;
+    padding: 20px 0px 20px 0;
+    color: white;
+    font-size: 24px;
+    font-family: Vazirmatn;
+    font-weight: 600;
+
+}
+
+.group-menu p:first-child {
+    text-shadow:
+        -1px -1px 0 #000,
+        /* Tạo viền đen */
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        2px 2px 3px rgba(0, 0, 0, 0.5);
+    /* Tạo bóng đổ */
+}
+
+.artist-name {
+    position: absolute;
+    left: 44px;
+    top: 300px;
+    font-size: 96px;
+    font-weight: 900;
+    color: white;
+}
+
+/* popular */
+
+.popular-title {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px 35px 0 35px;
+}
+
+.button-container {
+    text-align: center;
+    /* Center the button within the container */
+    margin-top: 5px;
+    /* Add some space above the button */
+}
+
+.button-in-popular-group {
+    display: inline-block;
+    width: 102px;
+    height: 25px;
+    background: #EE10B0;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5px;
+}
+
+/* artist's album */
+.artist-album-title {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0px 35px 15px 35px;
+}
+
+.artist-album-title span {
+    color: #0E9EEF;
+}
+
+
+/* single songs */
+.single-song-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin: 45px 35px 20px 35px;
+
+}
+
+.single-song-title span {
+    color: #EE10B0;
+}
+
+.scale-border-image {
+    margin: 10px;
+    border-radius: 5px;
+    width: 145px;
+}
+
+.artist-image{
+    width: 169px;
+    border-radius: 10px;
+}
+
+.inside-info-grid-artist-palylist {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 0;
+    position: relative;
+}
+
+.circle-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 0.8fr;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    padding: 0 5px;
+    width: 100%;
+}
+
+.circle-grid-details{
+    display:flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    justify-items: center;
+    gap:30px;
+}
+
+.artist-circle-image {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.artist-circle-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }

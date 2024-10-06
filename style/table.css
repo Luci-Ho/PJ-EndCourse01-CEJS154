@@ -1,0 +1,64 @@
+.group-table {
+    width: 98.5%;
+    margin-top: 20px;
+    margin-left:5px;
+    margin-right: 12px;
+}
+
+.table-contents {
+    color: white;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.table-contents th {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.highlight {
+    background: #1E1E1E;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.left-align span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.Name-of-song {
+    font-weight: 600;
+}
+
+.border-left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.border-right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main-font-size {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.space-row {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.ordinal-number {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.icon-details {
+    padding-bottom:10px;
+}

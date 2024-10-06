@@ -3,7 +3,7 @@
     flex-direction: column;
     flex-grow: 9;
     margin: 26px 20px 0px 340px;
-    z-index: 1000;
+    z-index: 1;
     opacity: 0.90; 
     background: linear-gradient(90deg, #005ac0af 0%, #0a53a789 40%, rgba(17, 114, 226, 0.144) 100%);
     border-radius: 10px;
@@ -135,63 +135,3 @@
 
 /* top 20 of Bill Board*/
 
-.billBoardTop20 {
-    width: 99%;
-    margin-top: 20px;
-    margin-left:5px;
-    margin-right: 12px;
-}
-
-.table-bill-board {
-    color: white;
-    text-align: center;
-    border-collapse: separate;
-    border-spacing: 0 10px;
-}
-
-.table-bill-board th {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.highlight {
-    background: #1E1E1E;
-}
-
-.left-align {
-    text-align: left;
-}
-
-.left-align span {
-    font-size: 12px;
-    font-weight: 300;
-}
-
-.Name-of-song {
-    font-weight: 600;
-}
-
-.border-left {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.border-right {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.main-font-size {
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.space-row {
-    border-collapse: separate;
-    border-spacing: 0 10px;
-}
-
-.ordinal-number {
-    font-size: 24px;
-    font-weight: 600;
-}
