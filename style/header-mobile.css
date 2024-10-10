@@ -8,18 +8,16 @@
     }
 
     .header-mobile {
+        width: 100%;
         display: flex;
-        margin: 15px;
-        padding: 20px;
+        padding: 10px;
         justify-content: space-between;
     }
 
-    .artist-header{
-
-    }
-
-    .more-icon-header{
-        
+    .left-header-mobile {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
     }
 
 }

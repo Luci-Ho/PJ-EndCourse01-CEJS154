@@ -6,7 +6,7 @@
     z-index: 1;
     opacity: 0.90;
     background: linear-gradient(90deg, #0C0B0B 0%, rgba(0, 0, 0, 0.096) 100%);
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .artist-detail {
@@ -30,6 +30,10 @@
     clip-path: inset(0.01% 0.01% 57% 0.01%);
     width: 74.7%;
     border-radius: 10px;
+}
+
+.more-icon-header {
+    display: none;
 }
 
 .menu {
@@ -88,6 +92,14 @@
     font-size: 40px;
     font-weight: 800;
     margin: 20px 35px 0 35px;
+}
+
+.popular-title span {
+    display: none;
+}
+
+.more-colume-title{
+    display: none;
 }
 
 .button-container {
@@ -162,21 +174,79 @@
 @media screen and (max-width: 430px) {
     .main {
         background: linear-gradient(90deg, #0C0B0B 0%, rgba(0, 0, 0, 0.096) 100%);
-        display: inline-block;
-        margin-top: 40px;
-        left: 25px;
-
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: auto;
+        width: 90%;
     }
 
-    
+    .more-icon-header {
+        display: relative;
+        z-index: 12;
+    }
+
+    .group-menu {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        align-items: center;
+    }
 
     .artist-header {
-
+        position: relative;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
         border-radius: 10px;
-        height: 216px;
+        height: 200px;
+        padding: 0px;
+        margin: 0px;
         box-shadow: 1px 9px 6px 1px rgba(0, 0, 0, 0.36);
         -webkit-box-shadow: 1px 9px 6px 1px rgba(0, 0, 0, 0.36);
         -moz-box-shadow: 1px 9px 6px 1px rgba(0, 0, 0, 0.36);
     }
 
+    .artist-header-image {
+        /* position: relative; */
+        clip-path: inset(0.01% 0.01% 39% 0.01%);
+        width: 100%;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .artist-name {
+        display:contents;        left: 10px;
+        top: 50px;
+        font-size: 36px;
+        font-weight: 900;
+        color: white;
+        z-index: 10;
+    }
+
+    /* popular */
+    .popular-title {
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 10px 15px 0 15px;
+
+    }
+
+    .popular-title span {
+        display: inline;
+        color: #EE10B0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .hide-on-mobile{
+        display:none;
+    }
+
+    .more-colume-title{
+        display:contents;
+    }
 }
