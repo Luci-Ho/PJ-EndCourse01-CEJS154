@@ -1,7 +1,7 @@
 .group-table {
     width: 98.5%;
     margin-top: 0px;
-    margin-left:5px;
+    margin-left: 5px;
     margin-right: 12px;
 }
 
@@ -12,26 +12,73 @@
     border-spacing: 0 10px;
 }
 
+
+.column1 {
+    width: 2%;
+}
+
+.column2 {
+    width: 4%;
+}
+
+.column3 {
+    width: 15%;
+}
+
+.column4 {
+    width: 10%;
+}
+
+.column5 {
+    width: 30%;
+}
+
+.column6 {
+    width: 2%;
+}
+
+.column7 {
+    width: 3%;
+}
+
+.column8 {
+    width: 2%;
+}
+
 .table-contents th {
     font-size: 20px;
     font-weight: 400;
+}
+
+.icon-detail-mobile {
+    display: none;
 }
 
 .highlight {
     background: #1E1E1E;
 }
 
-.left-align {
+.content-column1 {
+    text-align: center;
+    padding-right: 2px;
+}
+
+.column2-img {
     text-align: left;
 }
 
-.left-align span {
+.Name-of-song span {
     font-size: 12px;
     font-weight: 300;
 }
 
 .Name-of-song {
     font-weight: 600;
+    text-align: left;
+}
+
+.heart-icon-column6 {
+    text-align: left;
 }
 
 .border-left {
@@ -47,6 +94,8 @@
 .main-font-size {
     font-weight: 400;
     font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .space-row {
@@ -59,6 +108,69 @@
     font-weight: 600;
 }
 
-.icon-details {
-    padding-bottom:10px;
+.icon-details,
+.icon-details p {
+    padding-bottom: 4px;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 430px) {
+    .group-table {
+        width: 99%
+    }
+
+    .table-contents th,
+    .Name-of-song {
+        font-size: 16px;
+    }
+
+    .table-contents {
+        position: relative;
+    }
+
+    .column3 {
+        width: 10%;
+    }
+
+    .column4 {
+        display: none;
+    }
+
+    .column5 {
+        display: none;
+    }
+
+    .column6 {
+        display: none;
+    }
+
+    .column7 {
+        display: none;
+    }
+
+    .content-column1 {
+        font-size: 16px;
+        padding-right: 2px;
+    }
+
+    .icon-details {
+        padding-bottom: 0px;
+    }
+
+    .icon-detail-mobile {
+        display: contents;
+        padding: 0;
+    }
+
+    .icon-detail-mobile img {
+        height: 25px;
+    }
+
+    .icon-details p {
+        display: none;
+    }
+
+
 }

@@ -17,7 +17,6 @@
 }
 
 .artist-header {
-
     border-radius: 10px;
     height: 456px;
     box-shadow: 1px 9px 6px 1px rgba(0, 0, 0, 0.36);
@@ -77,7 +76,7 @@
 }
 
 .artist-name {
-    position: absolute;
+    position: relative;
     left: 44px;
     top: 300px;
     font-size: 96px;
@@ -91,14 +90,15 @@
     color: white;
     font-size: 40px;
     font-weight: 800;
-    margin: 20px 35px 0 35px;
+    margin: 0px 35px 0px 35px;
+    padding-top: 20px;
 }
 
-.popular-title span {
+.time-and-more-column-mobile {
     display: none;
 }
 
-.more-colume-title{
+.popular-title span {
     display: none;
 }
 
@@ -136,6 +136,9 @@
     color: #0E9EEF;
 }
 
+.view-all-mobile {
+    display: none;
+}
 
 /* single songs */
 .single-song-title {
@@ -218,7 +221,8 @@
     }
 
     .artist-name {
-        display:contents;        left: 10px;
+        display: block;
+        left: 10px;
         top: 50px;
         font-size: 36px;
         font-weight: 900;
@@ -227,12 +231,35 @@
     }
 
     /* popular */
+    .popular-title-mobile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+
+    }
+
     .popular-title {
         color: white;
         font-size: 24px;
         font-weight: 700;
-        margin: 10px 15px 0 15px;
+        margin: 0 5px 0 5px;
+        flex: 1;
+    }
 
+    .time-and-more-column-mobile {
+        display: contents;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        flex: 1;
+        
+    }
+
+    .time-and-more-column-mobile p {
+        padding-top: 20px;
+        margin-bottom: 0;
+        padding-right: 5px;
     }
 
     .popular-title span {
@@ -242,11 +269,8 @@
         font-weight: 700;
     }
 
-    .hide-on-mobile{
-        display:none;
+    .hide-on-mobile {
+        display: none;
     }
 
-    .more-colume-title{
-        display:contents;
-    }
 }
