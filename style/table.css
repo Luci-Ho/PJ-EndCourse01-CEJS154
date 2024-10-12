@@ -48,6 +48,7 @@
 .table-contents th {
     font-size: 20px;
     font-weight: 400;
+    padding-top: 10px;
 }
 
 .icon-detail-mobile {
@@ -61,6 +62,8 @@
 .content-column1 {
     text-align: center;
     padding-right: 2px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .column2-img {

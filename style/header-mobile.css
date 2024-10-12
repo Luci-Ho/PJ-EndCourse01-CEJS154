@@ -2,6 +2,10 @@
     display: none;
 }
 
+.menu-header-mobile {
+    display: none;
+}
+
 @media screen and (max-width : 430px) {
     .menu {
         display: none;
@@ -12,12 +16,36 @@
         display: flex;
         padding: 10px;
         justify-content: space-between;
+        align-items: center;
+
     }
 
     .left-header-mobile {
         color: white;
         font-size: 15px;
         font-weight: 500;
+    }
+
+    .right-header-mobile {
+        display: flex;
+        gap: 5px;
+    }
+
+    .menu-header-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .back-button-mobile {
+        display: flex;
+    }
+
+    .more-icon-header-mobile {
+        display: flex;
     }
 
 }
