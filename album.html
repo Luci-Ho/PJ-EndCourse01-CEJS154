@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./style/footer.css" />
     <link rel="stylesheet" href="./style/table.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="./style/header-mobile.css">
+    <link rel="stylesheet" href="./style/album-mobile.css">
+
     <script defer src="./components/footer.js"></script>
     <script defer src="./components/dashboard.js"></script>
     <script defer src="./index-album.js"></script>
@@ -22,6 +25,23 @@
     <!-- details in js components -->
     <aside id="dashboard"></aside>
     <!-- Phần main -->
+     <!-- header mobile -->
+    <div class="header-mobile">
+        <div class="left-header-mobile">
+            <p>10:00</p>
+        </div>
+        <div class="right-header-mobile">
+            <img src="./image/icon/wifi_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg">
+            <img src="./image/icon/signal_cellular_alt_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg">
+            <img src="./image/icon/battery_5_bar_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg">
+        </div>
+    </div>
+    <div class="menu-header-mobile">
+        <img class="back-button-mobile" src="./image/icon/blue-ion_arrow-back-outline.svg">
+        <p class="album-menu-mobile"> Album </p>
+        <img class="more-icon-header-mobile" src="./image/icon/iconamoon_menu-kebab-vertical-bold.svg">
+    </div>
+
     <main class="main">
         <div class="album-detail">
             <div class="album-header">
@@ -39,7 +59,9 @@
 
                 <div class="trendingmusic">
                     <div class="banner-trending-music">
-                        <img src="./image/album/album image/844adf7d6f536a6e2d4f61847c7148ce.png" width="268px">
+                        <img class="banner-album-normal" src="./image/album/album image/844adf7d6f536a6e2d4f61847c7148ce.png" width="268px">
+                        <img class="banner-album-mobile" src="./image/album/album image/3fbe0a9c093defb1d0a80e4d7c9a22e9.jpg">
+
                     </div>
                     <div>
                         <h2>Trending songs <span>mix</span></h2>

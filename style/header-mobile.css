@@ -26,6 +26,16 @@
         font-weight: 500;
     }
 
+    .album-menu-mobile {
+        font-size: 32px;
+        font-weight: 800;
+        background: linear-gradient(to right, #EE10B0, #0E9EEF);
+        /* Màu gradient từ trái sang phải */
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+    }
+
     .right-header-mobile {
         display: flex;
         gap: 5px;

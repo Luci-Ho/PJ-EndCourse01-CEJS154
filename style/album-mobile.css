@@ -2,4 +2,8 @@
     .dashboard {
         display:none;
     }
+
+    .hide-on-mobile {
+        display: none;
+    }
 }

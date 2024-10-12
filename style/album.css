@@ -76,6 +76,7 @@
     border-radius: 10px
 }
 
+
 .trendingmusic h2 {
     color: white;
     font-size: 40px;
@@ -135,3 +136,25 @@
 
 /* top 20 of Bill Board*/
 
+@media screen and (max-width: 430px) {
+    .main {
+        background: linear-gradient(90deg, #0C0B0B 0%, rgba(0, 0, 0, 0.096) 100%);
+        padding: 0px;
+        margin: auto;
+        width: 90%;
+    }
+
+    .menu-album {
+        display: none;
+    }
+    
+    .banner-album-normal {
+        display: none;
+    }
+   
+
+
+
+
+
+}
