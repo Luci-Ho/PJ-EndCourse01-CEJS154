@@ -25,7 +25,7 @@
     <!-- details in js components -->
     <aside id="dashboard"></aside>
     <!-- Phần main -->
-     <!-- header mobile -->
+    <!-- header mobile -->
     <div class="header-mobile">
         <div class="left-header-mobile">
             <p>10:00</p>
@@ -59,16 +59,22 @@
 
                 <div class="trendingmusic">
                     <div class="banner-trending-music">
-                        <img class="banner-album-normal" src="./image/album/album image/844adf7d6f536a6e2d4f61847c7148ce.png" width="268px">
-                        <img class="banner-album-mobile" src="./image/album/album image/3fbe0a9c093defb1d0a80e4d7c9a22e9.jpg">
-
+                        <img class="banner-album-normal"
+                            src="./image/album/album image/844adf7d6f536a6e2d4f61847c7148ce.png">
+                        <img class="banner-album-mobile"
+                            src="./image/album/album image/3fbe0a9c093defb1d0a80e4d7c9a22e9.jpg">
                     </div>
-                    <div>
-                        <h2>Trending songs <span>mix</span></h2>
+                    <div class="container-trending-content-mobile">
+                        <h2 class="hide-on-mobile">Trending songs <span>mix</span></h2>
+                        <h2 class="trending-ablum-mobile"> The Eminem Show </h2>
                         <p class="trending-music-content">tate mcree, nightmares, the neighberhood, doja cat and ...</p>
-
+                        <div class="trending-music-content-mobile">
+                            <img src="./image/artist/artist-image/Rectangle 37.png">
+                            <p> Eminem </p>
+                        </div>
                         <div class="Playlist-trending-songs">
                             <p>20 songs<span>.</span>1h36m </p>
+                            <img class="play-button-mobile" src="./image/icon/blue-octicon_play-16.svg">
                         </div>
                     </div>
                     <div>
@@ -79,6 +85,13 @@
                 </div>
             </div>
             <!-- top20 -->
+            <div class="title-mobile">
+                <p class="popular-title"> <span></span></p>
+                <div class="time-and-more-column-mobile">
+                    <p>Time</p>
+                    <p>More</p>
+                </div>
+            </div>
             <div class="group-table">
                 <table class="table-contents">
                     <tr>
@@ -90,9 +103,9 @@
                         <th class="column5">Album</th>
                         <th class="column6"></th>
                         <th class="column7">Time</th>
-                        <th class="column8"></th>
+                        <th class="column8 hide-on-mobile"></th>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">
                             <img src="./image/album/icon/arcticons_vk-music.svg">
                         </td>
@@ -100,7 +113,7 @@
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 1.svg"></td>
                         <td class="highlight Name-of-song"> Sorfcore <br> <span> The neighberhood </span></td>
                         <td class="hide-on-mobile highlight main-font-size"> Nov 4, 2023 </td>
-                        <td class="hide-on-mobile highlight main-font-size">Hard to Imagine  Neighbourhood Ever Changing
+                        <td class="hide-on-mobile highlight main-font-size">Hard to Imagine Neighbourhood Ever Changing
                         </td>
                         <td class="hide-on-mobile highlight heart-icon-column6"> <img
                                 src="./image/album/icon/ph_heart-light.svg"> </td>
@@ -110,7 +123,7 @@
                                     src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">2</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 2.svg"></td>
@@ -122,10 +135,10 @@
                         <td class="highlight main-font-size"> 2:45 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">3</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 3.svg"></td>
@@ -137,14 +150,14 @@
                         <td class="highlight main-font-size">2:11</td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">4</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 4.svg"></td>
-                        <td class="highlight Name-of-song"> Lovin On me <br> <span>  jack harlow </span></td>
+                        <td class="highlight Name-of-song"> Lovin On me <br> <span> jack harlow </span></td>
                         <td class="hide-on-mobile highlight main-font-size">Dec 15, 2023</td>
                         <td class="hide-on-mobile highlight main-font-size">Lovin On me</td>
                         <td class="hide-on-mobile highlight heart-icon-column6"> <img
@@ -152,10 +165,10 @@
                         <td class="highlight main-font-size">2:18</td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">5</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 8.svg"></td>
@@ -167,10 +180,10 @@
                         <td class="highlight main-font-size"> 2:56 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">6</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 6.svg"></td>
@@ -182,10 +195,10 @@
                         <td class="highlight main-font-size"> 2:56 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">7</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 7.svg"></td>
@@ -197,10 +210,10 @@
                         <td class="highlight main-font-size">3:20</td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">8</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 8n.svg"></td>
@@ -212,10 +225,10 @@
                         <td class="highlight main-font-size"> 2:24 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">9</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 9.svg"></td>
@@ -227,10 +240,10 @@
                         <td class="highlight main-font-size"> 3:05 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">10</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 10.svg"></td>
@@ -242,10 +255,10 @@
                         <td class="highlight main-font-size"> 3:17 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">11</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 11.svg"></td>
@@ -257,10 +270,10 @@
                         <td class="highlight main-font-size"> 3:03 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">12</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 12.svg"></td>
@@ -272,10 +285,10 @@
                         <td class="highlight main-font-size">2:30</td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">13</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 13.svg"></td>
@@ -287,10 +300,10 @@
                         <td class="highlight main-font-size"> 2:47 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">14</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 14.svg"></td>
@@ -302,10 +315,10 @@
                         <td class="highlight main-font-size"> 4:06 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">15</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 15.svg"></td>
@@ -317,10 +330,10 @@
                         <td class="highlight main-font-size"> 3:32 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">16</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 16.svg"></td>
@@ -332,10 +345,10 @@
                         <td class="highlight main-font-size"> 3:31 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">17</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 17.svg"></td>
@@ -347,10 +360,10 @@
                         <td class="highlight main-font-size"> 3:42 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">18</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 18.svg"></td>
@@ -362,10 +375,10 @@
                         <td class="highlight main-font-size"> 4:20 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">19</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 19.svg"></td>
@@ -377,10 +390,10 @@
                         <td class="highlight main-font-size"> 3:48 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="hide-on-mobile">
                         <td class="content-column1 ordinal-number">20</td>
                         <td class="highlight column2-img border-left"> <img
                                 src="./image/album/album image/The_Neighbourhood_-_The_Neighbourhood 20.svg"></td>
@@ -392,9 +405,199 @@
                         <td class="highlight main-font-size"> 1:15 </td>
                         <td class="highlight border-right main-font-size icon-details">
                             <p>...</p> <span class="icon-detail-mobile"> <img
-                                src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
-                            </td>
+                                    src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                        </td>
                     </tr>
+                    <table class="table-display-on-mobile table-contents group-table ">
+                        <tr>
+                            <!-- insert 8 columns -->
+                            <th class="red-column-1 hide-on-mobile"></th>
+                            <th class="red-column-2 hide-on-mobile"></th>
+                            <th class="red-column-3 hide-on-mobile"></th>
+                            <th class="red-column-4 hide-on-mobile"></th>
+                            <th class="red-column-5 hide-on-mobile"></th>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number"><img
+                                    src="./image/icon/iconamoon_player-pause-fill.svg"></td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> White America <br> <span> Eminem</span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 5:24 </td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="red-column-1 content-column1 ordinal-number">2</td>
+                            <td class=" red-column-2 hightlight-red column2-img border-left"> <img
+                                    src="./image/artist/artist-image/artist's-Albums 1.png"></td>
+                            <td class=" red-column-3 hightlight-red Name-of-song"> Business <br> <span> Eminem </span></td>
+                            <td class="red-column-4 hightlight-red main-font-size"> 4:11</td>
+                            <td class="red-column-5 hightlight-red border-right main-font-size icon-details">
+                                <p>...</p> <span class="icon-detail-mobile"> <img
+                                        src="./image/icon/blue-iconamoon_menu-kebab-vertical-bold.svg"></span>
+                            </td>
+                        </tr>
+                        
+
+
+                    </table>
                 </table>
             </div>
         </div>

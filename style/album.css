@@ -4,7 +4,7 @@
     flex-grow: 9;
     margin: 26px 20px 0px 340px;
     z-index: 1;
-    opacity: 0.90; 
+    opacity: 0.90;
     background: linear-gradient(90deg, #005ac0af 0%, #0a53a789 40%, rgba(17, 114, 226, 0.144) 100%);
     border-radius: 10px;
 }
@@ -62,6 +62,12 @@
     /* Tạo bóng đổ */
 }
 
+.title-mobile{
+    display: none;
+}
+
+/* Tredding music */
+
 .trendingmusic {
     display: flex;
     gap: 56px;
@@ -76,6 +82,19 @@
     border-radius: 10px
 }
 
+.banner-album-normal {
+    width: 268px;
+    border-radius: 10px;
+}
+
+.banner-album-mobile {
+    width: 160px;
+    height: 160px;
+    box-shadow: 7px 9px 4px rgba(0, 0, 0, 0.35);
+    width: 160px;
+    border-radius: 10px;
+    display: none;
+}
 
 .trendingmusic h2 {
     color: white;
@@ -87,6 +106,10 @@
     color: #EE10B0;
 }
 
+.trending-ablum-mobile {
+    display: none;
+}
+
 .trending-music-content {
     width: 390px;
     margin-top: 44px;
@@ -94,6 +117,10 @@
     color: white;
     font-size: 20px;
     font-weight: 600;
+}
+
+.trending-music-content-mobile {
+    display: none;
 }
 
 .Playlist-trending-songs {
@@ -114,6 +141,10 @@
     font-size: 40px;
     font-weight: 800;
     padding: 20px;
+}
+
+.play-button-mobile {
+    display: none;
 }
 
 .play-button {
@@ -138,20 +169,153 @@
 
 @media screen and (max-width: 430px) {
     .main {
-        background: linear-gradient(90deg, #0C0B0B 0%, rgba(0, 0, 0, 0.096) 100%);
+        background: linear-gradient(90deg, #EF2424 0%, rgba(253, 17, 17, 0.229) 100%);
         padding: 0px;
         margin: auto;
         width: 90%;
     }
 
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .album-header {
+        background: linear-gradient(90deg, #EF2424 0%, rgba(253, 17, 17, 0.267) 100%);
+        height: 200px;
+    }
+
     .menu-album {
         display: none;
     }
-    
+
+    .trendingmusic {
+        display: flex;
+        gap: 10px;
+        padding: 30px 10px;
+    }
+
+    .trendingmusic h2 {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .banner-trending-music {
+        width: 140px;
+        height: 140px;
+        box-shadow: none;
+    }
+
     .banner-album-normal {
         display: none;
     }
-   
+
+    .banner-album-mobile {
+        display: block;
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+
+    .container-trending-content-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trending-ablum-mobile {
+        display: contents;
+    }
+
+    .trending-music-content {
+        display: none;
+    }
+
+    .trending-music-content-mobile {
+        display: flex;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .trending-music-content-mobile img {
+        width: 30px;
+        height: 30px;
+        border-radius: 999px;
+    }
+
+    .trending-music-content-mobile p {
+        padding-top: 4px;
+        margin: 0;
+    }
+
+    .Playlist-trending-songs{
+        margin-top: 10px;
+
+    }
+
+    .Playlist-trending-songs p {
+        color: white;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 18px;
+
+    }
+
+    .Playlist-trending-songs p span {
+        color: #0E9EEF;
+        padding: 5px;
+    }
+
+    .play-button-mobile {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 50px;
+    }
+
+    .play-button {
+        display: none;
+    }
+
+    .title-mobile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .popular-title {
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 5px 0 5px;
+        flex: 1;
+    }
+
+    .time-and-more-column-mobile {
+        display: contents;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        flex: 1;
+    }
+
+    .time-and-more-column-mobile p {
+        padding-top: 20px;
+        margin-bottom: 0;
+        padding-right: 5px;
+    }
+
+    .popular-title span {
+        display: inline;
+        color: #EE10B0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+
 
 
 

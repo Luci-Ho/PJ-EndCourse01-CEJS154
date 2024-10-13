@@ -111,6 +111,11 @@
     font-weight: 600;
 }
 
+.table-display-on-mobile {
+    display: none;
+    width: 100%;
+}
+
 .icon-details,
 .icon-details p {
     padding-bottom: 4px;
@@ -119,12 +124,14 @@
 
 
 
+
+
 @media screen and (max-width: 430px) {
     .group-table {
-        width: 99%
+        width: 98%;
+        margin:1px;
     }
-
-    .table-contents th,
+   
     .Name-of-song {
         font-size: 16px;
     }
@@ -175,5 +182,40 @@
         display: none;
     }
 
+    .table-display-on-mobile {
+        display:block;
+        width: 100%;
+        }
 
+    .hightlight-red{
+        background: #EF2424;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
+        margin:0;
+        padding:0;
+    }
+
+    .column2-img{
+        width: 15%;
+    }
+
+    /* red */
+    .red-column-1{
+        width:5%;
+    }
+    .red-column-2{
+        width: 20%;
+    }
+    .red-column-3{
+        width: 50%;
+    }
+    .red-column-4{
+        width: 15%;
+    }
+    .red-column-5{
+        width: 10%;
+    }
+
+    .red-column-2 img{
+        width: 50px;
+    }
 }
