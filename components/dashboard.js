@@ -16,10 +16,10 @@ dashboardElement.innerHTML = `
             <p class="Menu">Menu</p>
             <div class="Menu-part">
                 <div class="dashboard-menu-item-hover"> <i class="fa-solid fa-house"></i>
-                    <p>Home </p>
+                    <p> <a href="index.html"> Home </p>
                 </div>
                 <div class="dashboard-menu-item-hover "> <i class="fa-regular fa-compass"></i>
-                    <p>Discover </p>
+                    <p > <a href="discover.html"> Discover </p>
                 </div>
                 <div class="dashboard-menu-item-hover"> <i class="fa-regular fa-circle-dot"></i>
                     <p><a href="./album.html" >Albums</a></p>

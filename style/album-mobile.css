@@ -1,6 +1,14 @@
+.play-music-container{
+    display: none;
+}
+
 @Media screen and (max-width = 430px){
     .dashboard {
         display:none;
+    }
+
+    .play-music-container {
+        display: flex;
     }
 
     

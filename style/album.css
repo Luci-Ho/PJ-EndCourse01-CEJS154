@@ -165,6 +165,10 @@
     padding: 16px;
 }
 
+.play-music-container{
+    display: none;
+}
+
 /* top 20 of Bill Board*/
 
 @media screen and (max-width: 430px) {
@@ -315,6 +319,15 @@
         font-weight: 700;
     }
 
+    /* playing music */
+    
+    .play-music-container {
+        display: flex;
+    }
+
+    .image-playing-music{
+        width: 54px;
+    }
 
 
 
